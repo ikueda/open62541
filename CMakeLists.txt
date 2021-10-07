@@ -12,7 +12,7 @@ endif()
 string(TOLOWER "${CMAKE_BUILD_TYPE}" BUILD_TYPE_LOWER_CASE)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/tools/cmake")
-find_package(Python3 REQUIRED)
+find_package(PythonLibs 3)
 set(PYTHON_EXECUTABLE ${Python3_EXECUTABLE})
 find_package(Git)
 include(AssignSourceGroup)
